@@ -182,7 +182,7 @@ void setup() {
   //*****************NAME SKETCH*******************************************
   //                                                                      *
   bus.begin (19200);                                                   // *
-  bus.println ("Setup complete: CMRI485_2MOTOR-v4 2019-06-29 1400");   // *
+  bus.println ("Setup complete: CMRI485_2MOTOR-v5 2019-08-29");   // *
   bus.println (String(EEPROM.read(0)) + " " + String(EEPROM.read(1)) + " " + String(EEPROM.read(2)) + " " + String(EEPROM.read(3)));
   //                                                                      *
   //***********************************************************************
