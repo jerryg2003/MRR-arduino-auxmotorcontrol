@@ -2,7 +2,7 @@
 // Using H-Bridge
 // from howtomechatronics.com
 
-//***NOTE: Only completed for MOtor A, although variables are included for MOtor B
+//***NOTE: Only completed for Motor A, although variables are included for Motor B
 // Sketch by Jerry Grochow (c)
 // 2018-10-22
 // 2018-12-27
@@ -22,7 +22,7 @@
 //CMRI input bits 10,11,12,13,14,15,16,17 indicate speed, 18 direction, 19 sensor
 
 //Set up Lights in JMRI to control Motors on/off, speed, and direction
-//  MotorA: CMRI output bit 0 (ON,OFF), bit 1(Increase speed), bit 2(decrease speed), [[bit 3 (change directiotion)]]
+//  MotorA: CMRI output bit 0 (ON,OFF), bit 1(Increase speed), bit 2(decrease speed), [[bit 3 (change direction)]]
 //  MotorB: CMRI output bit 10 (ON,OFF), bit 11(Increase speed), bit 12(decrease speed), bit 13 (change direction)
 //Set up Sensors in JMRI to indicate Motors speed and direction action taken and sensor
 //  MotorA: CMRI input bit 0-7 speed, 8 direction,9 sensor
