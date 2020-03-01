@@ -11,18 +11,18 @@
 // 2019-06-29 V4b starting to change CMRI calls and variables to bool
 // 2019-08-29 v5 replace millis() with curTime
 
-//CMRI output bit 47 used to say when JMRI panel active; allow motor on-off switch even when not
+//CMRI output bit 47=1 when JMRI panel active; allow motor on-off switch even when not
 //CMRI input bit 23 handshakes back to JMRI
 //Set up Light in JMRI controlled by CMRI bit 47
 //Set up Sensor in JMRI controlled by CMRI bit 23
 
-//CMRI output bits 0,1,2,3 control Motor A
+//CMRI output bits 0 (on, off), 1-2 (speed up-down), [[3 (rotation direction)]] control Motor A
 //CMRI input bits 0,1,2,3,4,5,6,7 indicate speed, 8 direction, 9 sensor
 //CMRI output bits 10,11,12,13 control Motor B
 //CMRI input bits 10,11,12,13,14,15,16,17 indicate speed, 18 direction, 19 sensor
 
 //Set up Lights in JMRI to control Motors on/off, speed, and direction
-//  MotorA: CMRI output bit 0 (ON,OFF), bit 1(Increase speed), bit 2(decrease speed), [[bit 3 (change direction)]]
+//  MotorA: CMRI output bit 0 (ON,OFF), bit 1(Increase speed), bit 2(decrease speed), [[bit 3 (change directiotion)]]
 //  MotorB: CMRI output bit 10 (ON,OFF), bit 11(Increase speed), bit 12(decrease speed), bit 13 (change direction)
 //Set up Sensors in JMRI to indicate Motors speed and direction action taken and sensor
 //  MotorA: CMRI input bit 0-7 speed, 8 direction,9 sensor
